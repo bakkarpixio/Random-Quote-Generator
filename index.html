@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <div class="flex flex-col justify-center items-center min-h-screen px-4">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Random Quote Generator</h1>
+            <p class="text-gray-400">Get inspired with timeless wisdom</p>
+        </div>
+        
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl p-8 w-full max-w-3xl min-h-64 flex flex-col justify-between transition-all duration-300 hover:shadow-indigo-500/30 hover:scale-[1.01]">
+            <div>
+                <i class="fas fa-quote-left text-3xl text-gray-300 mb-4"></i>
+                <p id="quote" class="text-xl md:text-2xl text-gray-800 font-medium italic mb-6 fade-in">Click the button below to generate a random quote</p>
+            </div>
+            <p id="author" class="text-right text-lg text-gray-600 font-semibold fade-in">- Author</p>
+        </div>
+        
+        <div class="mt-10 flex gap-4">
+            <button id="generateBtn" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-lg text-lg transition-all duration-200 flex items-center gap-2">
+                <i class="fas fa-random"></i>
+                Generate Quote
+            </button>
+
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
